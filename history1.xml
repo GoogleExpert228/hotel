@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrations>
+    <registration>
+        <number>101</number>
+        <checkInDate>2024-06-15</checkInDate>
+        <checkOutDate>2024-06-20</checkOutDate>
+        <note>BusinessTrip1</note>
+        <guestsNumber>2</guestsNumber>
+    </registration>
+
+    <registration>
+        <number>202</number>
+        <checkInDate>2024-07-10</checkInDate>
+        <checkOutDate>2024-07-15</checkOutDate>
+        <note>Vacation</note>
+        <guestsNumber>2</guestsNumber>
+    </registration>
+
+    <registration>
+        <number>303</number>
+        <checkInDate>2024-08-01</checkInDate>
+        <checkOutDate>2024-08-05</checkOutDate>
+        <note>FamilyTrip3</note>
+        <guestsNumber>2</guestsNumber>
+    </registration>
+
+    <registration>
+        <number>104</number>
+        <checkInDate>2024-06-12</checkInDate>
+        <checkOutDate>2024-06-18</checkOutDate>
+        <note>Vacation4</note>
+        <guestsNumber>2</guestsNumber>
+    </registration>
+
+    <registration>
+        <number>104</number>
+        <checkInDate>2024-06-12</checkInDate>
+        <checkOutDate>2024-06-18</checkOutDate>
+        <note>Vacation5</note>
+        <guestsNumber>2</guestsNumber>
+    </registration>
+
+</registrations>
+Строка 'fdsfg' добавлена в файл 'history.xml'
+Строка 'hello' добавлена в файл 'history.xml'
+Строка 'somecode' добавлена в файл 'history.xml'
+Строка 'something' добавлена в файл 'history.xml'
