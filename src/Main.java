@@ -1,10 +1,10 @@
 import FileSystem.factories.*;
+import addtional_commands.factories.*;
 import contracts.Command;
 import contracts.CommandFactory;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +14,11 @@ public class Main {
         commandFactories.put("add", new AddToFileCommandFactory());
         commandFactories.put("save", new SaveFileCommandFactory());
         commandFactories.put("saveas", new SaveAsFileCommandFactory());
+        commandFactories.put("checkin", new CheckInCommandFactory());
+        commandFactories.put("checkout", new CheckOutCommandFactory());
+        commandFactories.put("availability", new AvailabilityCommandFactory());
+        commandFactories.put("report", new ReportCommandFactory());
+        commandFactories.put("find", new FindRoomCommandFactory());
         commandFactories.put("exit", new ExitCommandFactory());
         commandFactories.put("help", new HelpCommandFactory());
 
@@ -52,3 +57,6 @@ public class Main {
         }
     }
 }
+
+
+

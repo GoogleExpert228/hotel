@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrations>
+<registration>
+   <number>202</number>
+   <checkInDate>2024-07-01</checkInDate>
+   <checkOutDate>2024-07-15</checkOutDate>
+   <note>Vacation</note>
+   <guestsNumber>2</guestsNumber>
+</registration>
+
+<registration>
+   <number>204</number>
+   <checkInDate>2024-07-01</checkInDate>
+   <checkOutDate>2024-07-15</checkOutDate>
+   <note>Vacation</note>
+   <guestsNumber>2</guestsNumber>
+</registration>
+
+<registration>
+   <number>201</number>
+   <checkInDate>2024-07-01</checkInDate>
+   <checkOutDate>2024-07-10</checkOutDate>
+   <note>Vacation</note>
+   <guestsNumber>2</guestsNumber>
+</registration>
+
+<registration>
+   <number>205</number>
+   <checkInDate>2024-07-01</checkInDate>
+   <checkOutDate>2024-07-15</checkOutDate>
+   <note>Vacation</note>
+   <guestsNumber>2</guestsNumber>
+</registration>
+
+<registration>
+   <number>104</number>
+   <checkInDate>2024-06-12</checkInDate>
+   <checkOutDate>2024-06-18</checkOutDate>
+   <note>Vacation5</note>
+   <guestsNumber>2</guestsNumber>
+</registration>
+
+<registration>
+   <number>404</number>
+   <checkInDate>2024-10-02</checkInDate>
+   <checkOutDate>2024-11-02</checkOutDate>
+   <note>Some note</note>
+   <guestsNumber>12</guestsNumber>
+</registration>
+
+<registration>
+   <number>303</number>
+   <checkInDate>2024-07-06</checkInDate>
+   <checkOutDate>2024-07-12</checkOutDate>
+   <note>"some</note>
+   <guestsNumber>2</guestsNumber>
+</registration>
+
+<registration>
+   <number>101</number>
+   <checkInDate>2024-07-16</checkInDate>
+   <checkOutDate>2024-07-20</checkOutDate>
+   <note>hello</note>
+   <guestsNumber>1</guestsNumber>
+</registration>
+
+</registrations>

@@ -32,16 +32,20 @@
         <guestsNumber>2</guestsNumber>
     </registration>
 
-    <registration>
-        <number>104</number>
-        <checkInDate>2024-06-12</checkInDate>
-        <checkOutDate>2024-06-18</checkOutDate>
-        <note>Vacation5</note>
-        <guestsNumber>2</guestsNumber>
-    </registration>
+<registration>
+   <number>101</number>
+   <checkInDate>2024-07-01</checkInDate>
+   <checkOutDate>2024-07-15</checkOutDate>
+   <note>hello</note>
+   <guestsNumber>1</guestsNumber>
+</registration>
+
+<registration>
+   <number>102</number>
+   <checkInDate>2024-09-01</checkInDate>
+   <checkOutDate>2024-09-10</checkOutDate>
+   <note>something</note>
+   <guestsNumber>1</guestsNumber>
+</registration>
 
 </registrations>
-Строка 'fdsfg' добавлена в файл 'history.xml'
-Строка 'hello' добавлена в файл 'history.xml'
-Строка 'somecode' добавлена в файл 'history.xml'
-Строка 'something' добавлена в файл 'history.xml'
