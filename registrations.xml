@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <registrations>
 <registration>
-   <number>202</number>
-   <checkInDate>2024-07-01</checkInDate>
-   <checkOutDate>2024-07-15</checkOutDate>
-   <note>Vacation</note>
-   <guestsNumber>2</guestsNumber>
-</registration>
-
-<registration>
    <number>204</number>
    <checkInDate>2024-07-01</checkInDate>
    <checkOutDate>2024-07-15</checkOutDate>

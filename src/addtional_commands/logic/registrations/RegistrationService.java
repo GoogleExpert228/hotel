@@ -1,6 +1,8 @@
 package addtional_commands.logic.registrations;
 
 import addtional_commands.helpfull_classes.FileHandler;
+import addtional_commands.logic.unavailables.UnavailableRoom;
+import addtional_commands.logic.unavailables.UnavailableRoomsParser;
 import rooms_actions.RoomEditor;
 import rooms_actions.RoomFinder;
 
@@ -12,6 +14,7 @@ import java.util.List;
 public class RegistrationService {
     private static final String REGISTRATIONS_FILE_PATH = "registrations.xml";
     private static final String HISTORY_FILE_PATH = "history.xml";
+    private static final String UNAVAILABLE_FILE_PATH = "unavailable.xml";
 
     public List<Registration> loadRegistrations(String filePath) {
         return RegistrationParser.parseRegistrations(filePath);
@@ -24,8 +27,9 @@ public class RegistrationService {
 
         try {
             List<Registration> existingRegistrations = RegistrationParser.parseRegistrations(REGISTRATIONS_FILE_PATH);
+            List<UnavailableRoom> unavailableRooms = UnavailableRoomsParser.parseUnavailableRooms(UNAVAILABLE_FILE_PATH);
 
-            // Check for duplicate
+            // Check for duplicate registration
             boolean isDuplicate = existingRegistrations.stream().anyMatch(existingRegistration ->
                     existingRegistration.getRoomNumber() == registration.getRoomNumber() &&
                             existingRegistration.getCheckInDate().equals(registration.getCheckInDate()) &&
@@ -34,6 +38,17 @@ public class RegistrationService {
 
             if (isDuplicate) {
                 System.out.println("Duplicate registration detected. This registration will not be added.");
+                return;
+            }
+
+            // Check for room availability
+            boolean isRoomUnavailable = unavailableRooms.stream().anyMatch(unavailableRoom ->
+                    unavailableRoom.getRoomNumber() == registration.getRoomNumber() &&
+                            !(registrationEndDate.isBefore(unavailableRoom.getStartDate()) || registrationStartDate.isAfter(unavailableRoom.getEndDate()))
+            );
+
+            if (isRoomUnavailable) {
+                System.out.println("The room is unavailable during the specified period. Registration will not be added.");
                 return;
             }
 
